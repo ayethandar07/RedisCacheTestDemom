@@ -1,0 +1,8 @@
+﻿version: "3.9"  # Specify the version of Docker Compose
+
+services:
+  redis:
+    image: redis:latest  # Use the latest Redis image
+    ports:
+      - "6379:6379"  # Map port 7014 on the host to 6379 in the container
+    restart: always  # Ensure the service restarts automatically on failure or reboot
